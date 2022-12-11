@@ -1,2 +1,2 @@
 import GuessingGame from './guessing.js'
-window.GuessingGame = GuessingGame
+window.guessingGame = new GuessingGame(0,1);

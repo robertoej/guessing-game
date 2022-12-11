@@ -2,10 +2,9 @@
 const getUserNumber = function(){
     console.log(this)
 
-    this.buttonElement = document.getElementById("checkButton")
-    this.guessInput = document.getElementById("guess")
-    buttonElement.onclick = () => {
-        let guessedNumber = guessInput.value
+    
+    this.elements.button.onclick = () => {
+        let guessedNumber = this.elements.guessInput.value
         let [isValid, reason] = isInvalid(guessedNumber)
         if (isValid) {
             if (isGuessRight(secret, guessedNumber)) {
